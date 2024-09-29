@@ -8,6 +8,7 @@
     --theme-color: #1e1e1e;
     --white-color: #FFFFFF;
     --blue-light: #4FC3F7;
+    --gray-light: #E1E1E1;
 }
 
 body {
@@ -63,6 +64,7 @@ body {
 .btn-outline-primary {
     border-color: var(--blue-light) !important;
     color: var(--white-color) !important;
+    border-radius: 100px !important;
 }
 
 .btn-outline-primary:hover {
@@ -107,9 +109,37 @@ body {
     border-radius: 100px;
     border: 1px solid var(--blue-light);
     cursor: pointer;
-    /* Pointer cursor on hover */
     animation: bounce 1s infinite;
     color: var(--white-color);
+}
+
+.goto-about:hover {
+    background-color: var(--blue-light);
+    color: var(--white-color);
+    /* animation: alternae; */
+}
+
+.about-heading {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(to left, var(--white-color), var(--blue-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-para {
+    color: var(--gray-light);
+    text-align: justify;
+}
+
+.border {
+    border: 1px solid var(--blue-light);
+    margin-bottom: 20px;
+    width: 50px;
 }
 
 
