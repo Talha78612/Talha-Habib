@@ -1,0 +1,137 @@
+/* import font from google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+:root {
+    --theme-color: #1e1e1e;
+    --white-color: #FFFFFF;
+    --blue-light: #4FC3F7;
+}
+
+body {
+    background-color: var(--theme-color);
+    font-family: "Montserrat", sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Custom Bootstrap changes */
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: var(--theme-color) !important;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    /* These are used to customize padding */
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--white-color);
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 10px !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--blue-light) !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    color: var(--white-color) !important;
+    font-family: "Oleo Script", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center !important;
+}
+
+.nav-link:hover {
+    color: var(--blue-light) !important;
+}
+
+.btn-outline-primary {
+    border-color: var(--blue-light) !important;
+    color: var(--white-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--blue-light) !important;
+}
+
+.intro-section {
+    background-image: url('../images/intro-section.svg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 600px;
+    width: auto;
+}
+
+.user-name {
+    color: var(--white-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.user-designation {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(to left, var(--white-color), var(--blue-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.user-intro {
+    color: var(--white-color);
+    font-weight: 300;
+}
+
+.goto-about {
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid var(--blue-light);
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    animation: bounce 1s infinite;
+    color: var(--white-color);
+}
+
+
+/* Responsive Fixes */
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row !important;
+        /* Use row direction for larger screens */
+    }
+}
+
+/* Keyframes for up and down animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Original position */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move up */
+    }
+}
