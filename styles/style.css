@@ -11,6 +11,8 @@
     --gray-light: #E1E1E1;
 }
 
+
+
 body {
     background-color: var(--theme-color);
     font-family: "Montserrat", sans-serif !important;
@@ -47,8 +49,10 @@ body {
 /* Custom Bootstrap changes */
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: var(--theme-color) !important;
+    background-color: #1e1e1e7e !important;
+    height: 56px !important;
 }
+
 
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
@@ -91,13 +95,17 @@ body {
 }
 
 .intro-section {
-    background-image: url('../images/intro-section.svg');
+    /* background-image: url('../images/intro-section.svg'); */
+    background-image: url('../images/Background\ Gradient.svg');
     background-size: cover;
     background-position: center;
     align-items: center;
     height: 600px;
     width: auto;
+    /* margin-top: 100px; */
 }
+
+.abstract-background {}
 
 
 .user-name {
@@ -177,6 +185,8 @@ body {
     width: auto;
 }
 
+
+
 .card {
     border: unset !important;
     background-color: #1e1e1e80;
@@ -184,8 +194,17 @@ body {
     width: auto;
 }
 
+.card-text {
+    color: var(--gray-light) !important;
+    text-align: justify;
+}
+
 .card-header {
     border-bottom: unset !important;
+}
+
+.card-body {
+    background-color: #080505d5;
 }
 
 .card-title {
@@ -234,6 +253,22 @@ body {
     border: var(--bs-border-width) solid var(--blue-light);
     border-radius: unset !important;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.my-row {
+    padding-right: unset !important;
+    padding-left: unset !important;
+}
+
+.footer-background {
+    background-image: url('../images/Background\ Gradient.svg');
+}
+
+.footer {
+    background-color: #080505d5;
+    margin-top: 300px;
+    height: 400px;
+    width: 100%;
 }
 
 /* Responsive Fixes */
