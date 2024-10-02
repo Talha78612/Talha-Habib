@@ -255,6 +255,116 @@ body {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.card-service {
+    background-color: #080505d5;
+    height: 200px;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    /* background-image: url('../images/Theme\ Gradient.png'); */
+    height: auto;
+    width: auto;
+    background-size: cover;
+}
+
+.card-service:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-icon {
+    color: var(--white-color);
+}
+
+.card-about {
+    margin-top: 16px;
+    color: var(--white-color);
+}
+
+
+
+.pricing-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.pricing-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.pricing-header p {
+    color: var(--gray-light);
+    margin-bottom: 50px;
+}
+
+.pricing-card {
+    background-color: var(--theme-color);
+    border: 1px solid var(--gray-light);
+    padding: 40px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: var(--white-color);
+    background-image: url('../images/Theme\ Gradient.png');
+}
+
+.pricing-card:hover {
+    border-color: var(--blue-light);
+    background-color: #292929;
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 48px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 24px;
+    color: var(--gray-light);
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    color: var(--gray-light);
+}
+
+.pricing-card ul li i {
+    color: var(--blue-light);
+    margin-right: 10px;
+}
+
+.btn-custom {
+    background-color: var(--blue-light);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--white-color);
+    color: var(--theme-color);
+}
+
+.highlight-card {
+    background-color: #2d2d2d;
+    border-color: var(--blue-light);
+}
+
 .my-row {
     padding-right: unset !important;
     padding-left: unset !important;
@@ -269,6 +379,15 @@ body {
     margin-top: 300px;
     height: 400px;
     width: 100%;
+}
+
+input::placeholder {
+    color: #e1e1e167 !important;
+}
+
+textarea::placeholder {
+    color: #e1e1e167 !important;
+
 }
 
 /* Responsive Fixes */
