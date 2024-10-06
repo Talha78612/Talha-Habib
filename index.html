@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/fontawesome.css">
     <link rel="shortcut icon" href="images/user.svg" type="image/x-icon">
     <script src="javascript/jquery.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
 </head>
@@ -147,56 +146,157 @@
     </div>
     <br>
     <br>
-    <div id="projects">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-12">
-                    <center>
-                        <h1 class="about-heading">Portfolio</h1>
-                        <div class="border"></div>
-                    </center>
-                </div>
+    <div class="container">
+        <div class="row" id="projects">
+            <div class="col-md-12">
+                <center>
+                    <h1 class="about-heading">Portfolio</h1>
+                    <div class="border"></div>
+                </center>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mt-3 pt-4">
-                        <img class="card-img-top" src="images/yompaid.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">YompAid</h5>
-                            <p class="card-text">YompAid is an Visa Agency Management system, Managing Sub Offices,
-                                Clients, Agents, Expense, Reports, Head Office, Agreement Letters...</p>
-                            <a href="#" class="btn btn-outline-primary">Read more</a>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Websites</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Web Applications</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Api Development</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                            aria-selected="false" disabled>Disabled</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mt-3 pt-4">
+                                <img class="card-img-top" src="images/city-zoom.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">YompAid</h5>
+                                    <p class="card-text">YompAid is an Visa Agency Management system, Managing Sub
+                                        Offices,
+                                        Clients, Agents, Expense, Reports, Head Office, Agreement Letters...</p>
+                                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-3 pt-4">
+                                <img class="card-img-top" src="images/britain.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">YompAid</h5>
+                                    <p class="card-text">YompAid is an Visa Agency Management system, Managing Sub
+                                        Offices,
+                                        Clients, Agents, Expense, Reports, Head Office, Agreement Letters...</p>
+                                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-3 pt-4">
+                                <img class="card-img-top" src="images/choicecars.png" height="500px"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Choice Cars</h5>
+                                    <p class="card-text">Choice Cars is platform which use for online booking cabs in
+                                        london,
+                                        User can select pick and drop location from map, select cab, on distance and
+                                        selected
+                                        cab we
+                                        generate the rent ... </p>
+                                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mt-3 pt-4">
-                        <img class="card-img-top" src="images/choicecars.png" height="500px" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Choice Cars</h5>
-                            <p class="card-text">Choice Cars is platform which use for online booking cabs in london,
-                                User can select pick and drop location from map, select cab, on distance and selected
-                                cab we
-                                generate the rent ... </p>
-                            <a href="#" class="btn btn-outline-primary">Read more</a>
+                <br>
+                <br>
+                <br>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <div class="card mt-3 pt-4">
+                                <img class="card-img-top" src="images/alzaiqa-resto.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alzaiqa Resto</h5>
+                                    <p class="card-text">Alzaiqa Resto is indonesia based project, that show the
+                                        different type
+                                        of dishes their charges and other things such home delivery, Food Category, Meal
+                                        Deals
+                                        ...</p>
+                                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="card mt-3 pt-4">
-                        <img class="card-img-top" src="images/alzaiqa-resto.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Alzaiqa Resto</h5>
-                            <p class="card-text">Alzaiqa Resto is indonesia based project, that show the different type
-                                of dishes their charges and other things such home delivery, Food Category, Meal Deals
-                                ...</p>
-                            <a href="#" class="btn btn-outline-primary">Read more</a>
+                        <div class="col-md-4 ">
+                            <div class="card mt-3 pt-4">
+                                <img class="card-img-top" src="images/247.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alzaiqa Resto</h5>
+                                    <p class="card-text">Alzaiqa Resto is indonesia based project, that show the
+                                        different type
+                                        of dishes their charges and other things such home delivery, Food Category, Meal
+                                        Deals
+                                        ...</p>
+                                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="card mt-3 pt-4">
+                                <img class="card-img-top" src="images/atctraveltour.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alzaiqa Resto</h5>
+                                    <p class="card-text">Alzaiqa Resto is indonesia based project, that show the
+                                        different type
+                                        of dishes their charges and other things such home delivery, Food Category, Meal
+                                        Deals
+                                        ...</p>
+                                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <h2>3</h2>
+        </div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">
+            <h1>444</h1>
+        </div>
     </div>
+
     <br>
     <br>
     <br>
@@ -314,7 +414,7 @@
         </div>
     </div>
 
-    <section class="pricing-section" id="pricing">
+    <section class="pricing-section mt-0 pb-0" id="pricing">
         <div class="container">
             <div class="pricing-header">
                 <div class="row">

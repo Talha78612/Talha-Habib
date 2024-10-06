@@ -35,6 +35,23 @@ body {
     transition: var(--bs-navbar-toggler-transition);
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #000000 !important;
+    background-color: #fdfdfd;
+    border-radius: 0px !important;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0px !important;
+    /* background: #ffffff17; */
+    color: white;
+}
+
+.nav-link:hover {
+    color: transparent !important;
+}
+
 .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
