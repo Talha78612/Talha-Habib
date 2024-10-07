@@ -407,6 +407,22 @@ textarea::placeholder {
 
 }
 
+.icon-link {
+    text-decoration: none;
+    /* Ensure no underline or text decoration */
+    color: inherit;
+    /* Preserve the original icon color */
+    display: inline-block;
+    /* Ensures the element only takes up the space of the icon */
+    vertical-align: middle;
+    /* Aligns the icon vertically to the middle */
+}
+
+.icon-link svg {
+    display: block;
+    /* Removes any inline display quirks that might create space/lines */
+}
+
 /* Responsive Fixes */
 @media (min-width: 992px) {
     .navbar-nav {
@@ -420,6 +436,15 @@ textarea::placeholder {
         display: none;
         /* Use row direction for larger screens */
     }
+}
+
+.footer-heading {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 100px;
+    color: var(--white-color);
 }
 
 /* Keyframes for up and down animation */

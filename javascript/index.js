@@ -1,3 +1,5 @@
+alert(" ⚠ Development mode! Please ignore bugs");
+
 function downloadResume() {
     const link = document.createElement('a');
     link.href = 'https://raw.githubusercontent.com/Talha78612/Talha-Habib/main/Talha%20Habib.pdf';
